@@ -30,14 +30,28 @@
                                 </constraints>
                                 <state key="normal" title="Draw"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-Zu-BFv">
+                                <rect key="frame" x="279" y="607" width="80" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="XRs-ik-eJp"/>
+                                    <constraint firstAttribute="height" constant="40" id="abf-AY-VGw"/>
+                                </constraints>
+                                <state key="normal" title="Erase"/>
+                                <connections>
+                                    <action selector="erase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i5e-Ah-aRs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XT8-1f-Uqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2af-a7-WXS"/>
                             <constraint firstItem="XT8-1f-Uqt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Uv-Cf-P2d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ba7-Zu-BFv" secondAttribute="trailing" constant="16" id="KC8-Py-Ifu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2rb-DU-DoU" secondAttribute="bottom" constant="20" id="P9e-Fz-uMz"/>
                             <constraint firstItem="2rb-DU-DoU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QGy-Wr-9HD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XT8-1f-Uqt" secondAttribute="bottom" id="RnH-Ge-ARx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ba7-Zu-BFv" secondAttribute="bottom" constant="20" id="cfe-2z-bXd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XT8-1f-Uqt" secondAttribute="trailing" id="wSN-q7-Kqv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

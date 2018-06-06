@@ -16,6 +16,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     let configuration = ARWorldTrackingConfiguration()
     
+    var color = UIColor()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
@@ -25,7 +27,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
 
     func renderer(_ renderer: SCNSceneRenderer, willRenderScene scene: SCNScene, atTime time: TimeInterval) {
-        print("Rendering")
+        //print("Rendering")
         
         // We need to extract the location and orientation
         // everytime the renderer gets called
@@ -62,6 +64,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
 
     }
+    
+    @IBAction func erase(_ sender: Any) {
+        self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+            node.removeFromParentNode()
+        }
+    }
+    
+    
+    
 }
 
 // Modify the "+" operator
